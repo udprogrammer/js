@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Value A : <input type="text" id="demo" /><br /><br />
+    Value B : <input type="text" id="demo1" /><br /><br />
+    <input type="submit" onclick="area()" /><br />
+    <h1 id="math"></h1>
+    <script>
+      function area() {
+        let a = parseInt(document.getElementById("demo").value);
+        let b = parseInt(document.getElementById("demo1").value);
+        let c = 2 * a * (a * a + b * b) * 2 * b;
+
+        document.getElementById("math").innerHTML = c;
+      }
+    </script>
+  </body>
+</html>

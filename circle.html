@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    R : <input type="text" id="demo" /><br /><br />
+    <input type="submit" onclick="area()" /><br />
+    Area of circle :
+    <h1 id="areacircle"></h1>
+    <script>
+      function area() {
+        const pi = 3.14;
+        let r = parseInt(document.getElementById("demo").value);
+        let c = pi * r * r;
+
+        document.getElementById("areacircle").innerHTML = c;
+      }
+    </script>
+  </body>
+</html>

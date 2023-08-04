@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Enter A:<input type="text" id="demo" /><br /><br />
+    Enter B: <input type="text" id="demo1" /><br /><br />
+    <input type="submit" onclick="greater()" />
+    <h1 id="num"></h1>
+    <script>
+      function greater() {
+        let a = parseInt(document.getElementById("demo").value);
+        let b = parseInt(document.getElementById("demo1").value);
+        if (a > b) {
+          document.getElementById("num").innerHTML = "A is greater than B";
+        } else {
+          document.getElementById("num").innerHTML = "B is greater than A";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Enter Your Age : <input type="text" id="demo" /><br /><br />
+    <input type="submit" onclick="age()" />
+    <h1 id="num"></h1>
+    <script>
+      function age() {
+        let a = parseInt(document.getElementById("demo").value);
+        if (a >= 18) {
+          document.getElementById("num").innerHTML =
+            "You are eligible for vote ";
+        } else {
+          document.getElementById("num").innerHTML =
+            "You are not eligible for vote ";
+        }
+      }
+    </script>
+  </body>
+</html>

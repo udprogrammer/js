@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Enter Your Weight : <input type="text" id="demo" /><br /><br />
+    <input type="submit" onclick="Weight1()" />
+    <h1 id="num"></h1>
+    <script>
+      function Weight1() {
+        let a = parseInt(document.getElementById("demo").value);
+        if (a >= 75) {
+          document.getElementById("num").innerHTML = "You are Heavy ";
+        } else {
+          document.getElementById("num").innerHTML = "You are not Heavy ";
+        }
+      }
+    </script>
+  </body>
+</html>
